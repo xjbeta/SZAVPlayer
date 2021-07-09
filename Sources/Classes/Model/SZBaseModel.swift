@@ -5,7 +5,7 @@
 //  Created by CaiSanze on 2019/12/13.
 //
 
-import UIKit
+import AppKit
 
 protocol SZBaseModel: Codable {
     static var tableName: String { get }

@@ -11,6 +11,6 @@ struct SZAVPlayerSeekItem {
 
     var time: Float64
     var autoPlay: Bool
-    var completion: SZAVPlayer.SeekCompletion?
+//    var completion: SZAVPlayer.SeekCompletion?
 
 }

@@ -4,7 +4,7 @@
 //  Created by CaiSanze on 2019/11/27.
 //
 
-import UIKit
+import AppKit
 
 public class SZAVPlayerCache: NSObject {
 

@@ -5,7 +5,7 @@
 //  Created by CaiSanze on 2019/12/6.
 //
 
-import UIKit
+import AppKit
 
 public typealias SZAVPlayerRange = Range<Int64>
 

@@ -5,7 +5,7 @@
 //  Created by CaiSanze on 2020/1/6.
 //
 
-import UIKit
+import AppKit
 import AVKit
 
 public struct SZAVPlayerConfig {

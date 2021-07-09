@@ -5,7 +5,7 @@
 //  Created by CaiSanze on 2019/11/28.
 //
 
-import UIKit
+import AppKit
 
 public class SZAVPlayerDatabase: NSObject {
 

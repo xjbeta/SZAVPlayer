@@ -4,7 +4,7 @@
 //  Created by CaiSanze on 2019/11/27.
 //
 
-import UIKit
+import AppKit
 import AVKit
 import CommonCrypto
 
@@ -159,23 +159,23 @@ extension SZAVPlayerFileSystem {
         return String(format: "%4.2f %@", convertedValue, tokens[multiplyFactor])
     }
 
-    static func snapshot(url: URL) -> UIImage? {
-        let asset = AVURLAsset(url: url)
-        let generator = AVAssetImageGenerator(asset: asset)
-        generator.appliesPreferredTrackTransform = true
-
-        let timestamp = CMTime(seconds: 2, preferredTimescale: 60)
-
-        do {
-            let imageRef = try generator.copyCGImage(at: timestamp, actualTime: nil)
-
-            return UIImage(cgImage: imageRef)
-        } catch let error as NSError {
-            SZLogError("Image generation failed with error \(error)")
-
-            return nil
-        }
-    }
+//    static func snapshot(url: URL) -> UIImage? {
+//        let asset = AVURLAsset(url: url)
+//        let generator = AVAssetImageGenerator(asset: asset)
+//        generator.appliesPreferredTrackTransform = true
+//
+//        let timestamp = CMTime(seconds: 2, preferredTimescale: 60)
+//
+//        do {
+//            let imageRef = try generator.copyCGImage(at: timestamp, actualTime: nil)
+//
+//            return UIImage(cgImage: imageRef)
+//        } catch let error as NSError {
+//            SZLogError("Image generation failed with error \(error)")
+//
+//            return nil
+//        }
+//    }
 
     static func resolution(url: URL) -> CGSize? {
         guard let track = AVURLAsset(url: url).tracks(withMediaType: AVMediaType.video).first else {

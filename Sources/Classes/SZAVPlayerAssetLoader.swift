@@ -5,7 +5,7 @@
 //  Created by CaiSanze on 2019/12/23.
 //
 
-import UIKit
+import AppKit
 import AVFoundation
 import CoreServices
 
